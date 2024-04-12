@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.cesarele23.chatudp.ChatController">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="500.0">
+         <bottom>
+            <Pane prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="tfMessage" layoutX="45.0" layoutY="13.0" prefHeight="27.0" prefWidth="307.0" promptText="Escribe un mensaje..." style="-fx-background-radius: 15;" />
+                  <Button layoutX="365.0" layoutY="12.0" mnemonicParsing="false" onAction="#clickBtnSendMessage" style="-fx-background-radius: 15; -fx-background-color: #33FFBE;" text="Envíar" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="425.0" layoutY="12.0" mnemonicParsing="false" onAction="#clickBtnLogout" style="-fx-background-radius: 15; -fx-background-color: red;" text="Salir" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </bottom>
+         <center>
+            <ScrollPane hbarPolicy="NEVER" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <content>
+                  <VBox fx:id="vbMessages" fillWidth="false" prefHeight="325.0" prefWidth="500.0" scaleShape="false" spacing="10.0">
+                     <padding>
+                        <Insets left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </center>
+         <top>
+            <Pane prefHeight="23.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Text fx:id="tUsername" layoutX="25.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre de usuario" />
+               </children>
+            </Pane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

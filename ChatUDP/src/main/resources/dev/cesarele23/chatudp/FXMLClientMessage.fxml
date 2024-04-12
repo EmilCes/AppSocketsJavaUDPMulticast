@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.Font?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane minHeight="40.0" minWidth="50.0" prefHeight="52.0" prefWidth="266.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.cesarele23.chatudp.ClientMessageController">
+   <children>
+       <Pane layoutX="200" minHeight="40.0" minWidth="50.0" prefHeight="52.0" prefWidth="266.0" style="-fx-background-color: #D3D5DA; -fx-background-radius: 15;">
+           <children>
+               <Text fx:id="tUsername" fill="#ffa20d" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" x="20.0" y="15.0">
+                   <font>
+                       <Font size="9.0" />
+                   </font>
+               </Text>
+               <Text fx:id="tMessage" fill="WHITE" layoutX="20.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Este es un mensaje larguisimooooooooooooo" wrappingWidth="230.0" y="10.0">
+                   <font>
+                       <Font size="14.0" />
+                   </font>
+               </Text>
+           </children>
+           <VBox.margin>
+               <Insets left="220.0" />
+           </VBox.margin>
+       </Pane>
+   </children>
+</AnchorPane>

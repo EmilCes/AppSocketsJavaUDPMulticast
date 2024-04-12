@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="140" maxWidth="400" minHeight="140" minWidth="400" prefHeight="40.0" prefWidth="400.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.cesarele23.chatudp.LoginController">
+   <children>
+      <TextField fx:id="tfUsername" layoutX="38.0" layoutY="41.0" prefHeight="35.0" prefWidth="324.0" promptText="Nombre de Usuario" />
+      <Label layoutX="38.0" layoutY="15.0" text="Ingresa tu nombre de usuario" />
+      <Button layoutX="265.0" layoutY="90.0" mnemonicParsing="false" onAction="#clickBtnLogin" style="-fx-background-color: #33FFBE;" text="Iniciar Sesión" textFill="WHITE" />
+      <Text fx:id="tErrorMessage" fill="RED" layoutX="38.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingresa un nombre de usuario" visible="false" />
+   </children>
+</AnchorPane>
